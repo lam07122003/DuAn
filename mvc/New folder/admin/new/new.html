@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="dash-content">
+      <div class="activity">
+        <div class="title">
+          <i class="uil uil-gold"></i>
+          <span class="text">Quản lí sản phẩm</span>
+          <div class="create">
+            <a href="<?= URLROOT ?>/a_product/create"
+              ><i class="uil uil-plus"></i
+            ></a>
+          </div>
+        </div>
+
+        <table id="customers">
+          <tr>
+            <th><i class="uil uil-list-ol"></i> ID</th>
+            <th><i class="uil uil-paragraph"></i> Tên sản phẩm</th>
+            <th><i class="uil uil-dollar-sign"></i> Đơn giá</th>
+            <th><i class="uil uil-percentage"></i> Giảm giá</th>
+            <th><i class="uil uil-calender"></i> Ngày nhập</th>
+            <th><i class="uil uil-image"></i> Hình</th>
+            <th><i class="uil uil-chart-pie-alt"></i> Đặc biệt</th>
+            <th><i class="uil uil-list-ui-alt"></i> Loại</th>
+            <th><i class="uil uil-file-edit-alt"></i> Action</th>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="font-size: 30px">
+              <a style="margin-right: 10px" href=""><i class="fa-regular fa-pen-to-square"></i></a>
+              <a  onclick="return confirm('Bạn có chắc muốn xóa?')"  href="" ><i class="fa-solid fa-trash"></i></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
